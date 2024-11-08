@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festiva</title>
+</head>
+<body>
+    <h2>Listing Details</h2>
+    <ul>
+        <li><%=listing.title%></li>
+        <li><%=listing.date%></li>
+        <li><%=listing.time%></li>
+        <li><%=listing.image%></li>
+        <li><%=listing.venue%></li>
+        <li><%=listing.price%></li>
+    </ul>
+    <br>
+    <a href="/listings/<%=listing.id%>/edit">Edit this listing</a>
+    <form action="/listings/<%=listing.id%>?_method=DELETE" method="post">
+        <button>DELETE</button>
+    </form>
+</body>
+</html>

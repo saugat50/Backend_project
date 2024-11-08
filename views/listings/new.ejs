@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create listing</title>
+</head>
+<body>
+    <h2>create a new listing</h2>
+  <form action="/listings" method="POST">
+    <input type="text" name="listing[title]" placeholder="enter name of event"><br>
+    <input type="date" name="listing[date]" placeholder="enter event time"><br>
+    <input type="time" name="listing[time]" placeholder="enter event time"><br>
+    <input type="file" name="listing[image]" placeholder="enter image"><br>
+    <input type="text" name="listing[venue]"  placeholder="enter venue of event"><br>
+    <input type="number" name="listing[price]" placeholder="enter price of the events"><br>
+
+    <button>ADD</button><br>
+  </form>    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festiva</title>
+</head>
+
+<body>
+
+    <h2>ALL listings</h2>
+    <form action="/listings/new" method="GET">
+        <button>Create New listing</button>
+    </form>
+    <ul>
+        <%for (let listing of allListing){%>
+        <li>
+            <a href="/listings/<%=listing.id%>"><%=listing.title%></a>
+        </li>
+        <%}%>
+    </ul>
+
+</body>
+
+</html>
